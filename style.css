@@ -1,0 +1,23 @@
+body {
+	background-color:#2f2f2f;
+}
+
+#doss {
+	width: 15%;
+	padding:1em;
+}
+
+#fich {
+	width: 7%;
+	padding:1em;
+}
+
+a {
+	text-decoration:none;
+	color:white;
+}
+
+a:hover {
+	text-decoration:none;
+	color:#00d2ff;
+}
