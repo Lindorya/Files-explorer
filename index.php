@@ -42,27 +42,19 @@
 						            $adresse = $adresse.$_GET['dossier'];
 						           }
 
+
 						           $dirs = scandir($adresse);
 						           foreach ($dirs as $folder) {
 
 						            if (!is_dir($adresse.$folder)) {
 
-						              if (isset($_GET['dossier'])) {
+						            	 if (isset($_GET['dossier'])){
+                        
+                        					echo "<a download='$folder' href=http://romaneh.marmier.codeur.online/".$_GET['dossier'].$folder."><img id='fich' src='images/fichier.png'> $folder</a><br>";
 
+                    						}
+                    					}
 
-						               echo "<a href='index.php?dossier='".$_GET['dossier']."$folder/><img id='fich' src='images/fichier.png'>$folder</a><br>"; 
-
-						              }
-
-						              else {
-						                if (isset($_GET['dossier'])) {
-
-
-						               echo "<a href='index.php?dossier='".$_GET['dossier']."'$folder/><img id='fich' src='images/fichier.png'>$folder</a><br>";
-
-						              }
-						            }
-						            }
 
 							            else {
 
@@ -70,7 +62,7 @@
 
 
 							                  if (isset($_GET['dossier'])){
-							                      echo "<a href='index.php?dossier=".$_GET['dossier'].$folder."/'><img src='images/prev.png'>$folder</a><br>";
+							                      echo "<a target='_blank' href='index.php?dossier=".$_GET['dossier'].$folder."/'><img src='images/prev.png'>$folder</a><br>";
 							                      }
 
 							                  else{
@@ -78,8 +70,8 @@
 							                  }
 							                }
 							                
-							                elseif ($folder == ".") {
-							                  echo "<a href='index.php'><img src='images/home.png'>HOME</a><br>";
+							                else if ($folder == ".") {
+							                  echo "<a href='index.php'><img id='home' src='images/home.png'>HOME</a><br>";
 							                }
 
 							                else {
@@ -94,12 +86,18 @@
 
 							                }
 							                }
+	
+
 
 				    ?>
+
+				</div>
+
 				</div>
 
 			
 			<script src ="fichier.js" type="text/javascript"></script>
+
 			</body>
 
 
