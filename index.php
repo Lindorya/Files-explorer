@@ -56,8 +56,10 @@
 						            	 	<?php 
                         
                         					echo "<a download='$folder' href=http://romaneh.marmier.codeur.online/".$_GET['dossier'].$folder."><img id='fich' src='images/fichier.png'>Télécharger le fichier $folder</a><br>"; ?>
+
                         					</div>
                         					<div class="col-xs-12 col-md-6">
+
                         					<?php
 
 
@@ -86,7 +88,7 @@
 							                }
 							                
 							                else if ($folder == ".") {
-							                  echo "<a href='index.php'><img id='home' src='images/home.png'>HOME</a><br>";
+							                  echo "<a href='index.php'><img id='home' src='images/home.png'></a><br>";
 							                }
 
 							                else {
@@ -120,3 +122,5 @@
 
 
 	</html>
+
+
