@@ -49,7 +49,8 @@
 
 						              if (isset($_GET['dossier'])) {
 
-						               echo "<a href='index.php?dossier='".$_GET['dossier']."$folder/><img id='fich' src='images/fichier.png'>$folder</a><br>";
+
+						               echo "<a href='index.php?dossier='".$_GET['dossier']."$folder/><img id='fich' src='images/fichier.png'>$folder</a><br>"; 
 
 						              }
 
@@ -65,7 +66,7 @@
 
 							            else {
 
-							              if ($folder == ".."){
+							             if ($folder == ".."){
 
 
 							                  if (isset($_GET['dossier'])){
@@ -76,9 +77,12 @@
 							                      echo "<a href='index.php'>$folder</a><br><img src='images/prev.png'>";
 							                  }
 							                }
+							                
+							                elseif ($folder == ".") {
+							                  echo "<a href='index.php'><img src='images/home.png'>HOME</a><br>";
+							                }
 
 							                else {
-
 							                  if (isset($_GET['dossier'])){
 							                      echo "<a href='index.php?dossier=".$_GET['dossier'].$folder."/'><img id='doss' src='images/dossier.png'>$folder</a><br>";
 							                      }
@@ -91,9 +95,8 @@
 							                }
 							                }
 
-
 				    ?>
-				    </div>
+				</div>
 
 			
 			<script src ="fichier.js" type="text/javascript"></script>
