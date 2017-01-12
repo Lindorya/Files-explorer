@@ -8,7 +8,7 @@ body {
 }
 
 #fich {
-	width: 7%;
+	width: 15%;
 	padding:1em;
 }
 
@@ -21,3 +21,9 @@ a:hover {
 	text-decoration:none;
 	color:#00d2ff;
 }
+
+a:active {
+	text-decoration:none;
+	color:#00d2ff;
+}
+
