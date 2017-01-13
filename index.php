@@ -32,6 +32,8 @@
 
 				<div class="container">
 
+				<div class="explo">
+
 				    <?php
 
 						      $adresse = "/home/romaneh/";
@@ -78,7 +80,8 @@
 							             if ($folder == ".."){
 
 
-							                  if (isset($_GET['dossier'])){
+							                  if (isset($_GET['dossier'])){ 
+
 							                      echo "<a href='index.php?dossier=".$_GET['dossier'].$folder."/'><img src='images/prev.png'>$folder</a><br>";
 							                      }
 
@@ -93,11 +96,13 @@
 
 							                else {
 							                  if (isset($_GET['dossier'])){
-							                      echo "<a href='index.php?dossier=".$_GET['dossier'].$folder."/'><img id='doss' src='images/dossier.png'>$folder</a><br>";
+
+
+							                      echo "<a class='link' href='index.php?dossier=".$_GET['dossier'].$folder."/'><img id='doss' src='images/dossier.png'>$folder</a><br>";
 							                      }
 							                  else {
 
-							                  echo "<a href='index.php?dossier=$folder/'><img id='doss' src='images/dossier.png'>$folder</a><br>";
+							                  echo "<a class='link' href='index.php?dossier=$folder/'><img id='doss' src='images/dossier.png'>$folder</a><br>";
 							                  }
 							                }
 
@@ -108,12 +113,13 @@
 
 				    ?>
 
-				</div>
+
 
 				</div>
 
+</div>
 			
-			<script src ="fichier.js" type="text/javascript"></script>
+			<script src ="ajax.js" type="text/javascript"></script>
 
 			</body>
 
@@ -122,5 +128,6 @@
 
 
 	</html>
+
 
 
