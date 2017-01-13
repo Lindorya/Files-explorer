@@ -31,6 +31,7 @@
 			<body>
 
 				<div class="container">
+				<div class="row">
 
 				<div class="explo">
 
@@ -74,7 +75,6 @@
                     						}
                     					}
 
-
 							            else {
 
 							             if ($folder == ".."){
@@ -86,7 +86,7 @@
 							                      }
 
 							                  else{
-							                      echo "<a href='index.php'>$folder</a><br><img src='images/prev.png'>";
+							                      echo "<a href='index.php'>$folder</a><br><img src='images/prev.png'><br>";
 							                  }
 							                }
 							                
@@ -98,11 +98,11 @@
 							                  if (isset($_GET['dossier'])){
 
 
-							                      echo "<a class='link' href='index.php?dossier=".$_GET['dossier'].$folder."/'><img id='doss' src='images/dossier.png'>$folder</a><br>";
+							                      echo "<div id='do'><div class='col-xs-12 col-md-6'><a  class='link' href='index.php?dossier=".$_GET['dossier'].$folder."/'><img id='doss' src='images/dossier.png'>$folder</a><br></div></div>";
 							                      }
 							                  else {
 
-							                  echo "<a class='link' href='index.php?dossier=$folder/'><img id='doss' src='images/dossier.png'>$folder</a><br>";
+							                  echo "<div id='do'><div class='col-xs-12 col-md-6'><a class='link' href='index.php?dossier=$folder/'><img id='doss' src='images/dossier.png'>$folder</a><br></div></div>";
 							                  }
 							                }
 
@@ -114,7 +114,7 @@
 				    ?>
 
 
-
+</div>
 				</div>
 
 </div>
